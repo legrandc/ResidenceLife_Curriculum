@@ -5,6 +5,7 @@ body {
 
 main {
 	background-color: white;
+	padding-top: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
@@ -178,6 +179,7 @@ td[rowspan] {
     padding: 0px;
     padding-left: 175px;
     overflow: hidden;
+    margin-left: 170px;
 }
 
 #navigation ul li {
