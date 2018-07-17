@@ -24,9 +24,65 @@ app.get('/', function(req, res){
     res.render('index');
 });
 
-app.listen(3000, function(){
-    console.log('Server started on port 3000...');     
-})
+app.get('/raResponsibilities', function(req, res){
+    res.render('raResponsibilities');
+});
+
+app.get('/monthByMonth', function(req, res){
+    res.render('monthByMonth'); 
+});
+
+app.get('/proposalsEvals', function(req, res){
+    res.render('proposalsEvals'); 
+});
+
+app.get('/helpfulSites', function(req, res){
+    res.render('helpfulSites'); 
+});
+
+app.get('/months/august', function(req, res){
+    res.render('months/august');
+});
+
+app.get('/months/september', function(req, res){
+    res.render('months/september');
+});
+
+app.get('/months/october', function(req, res){
+    res.render('months/october');
+});
+
+app.get('/months/november', function(req, res){
+    res.render('months/november');
+});
+
+app.get('/months/december', function(req, res){
+    res.render('months/december');
+});
+
+app.get('/months/january', function(req, res){
+    res.render('months/january');
+});
+
+app.get('/months/february', function(req, res){
+    res.render('months/february');
+});
+
+app.get('/months/march', function(req, res){
+    res.render('months/march');
+});
+
+app.get('/months/april', function(req, res){
+    res.render('months/april');
+});
+
+app.get('/months/may', function(req, res){
+    res.render('months/may');
+});
+
+app.listen(port, function(){
+    console.log('Server started on port ' + port + '...');     
+});
 
 /*fs.readFile('../views/index.ejs', (err, ejs) => {
     if(err){
@@ -44,4 +100,3 @@ app.listen(3000, function(){
         console.log('Server started on port ' + port);
     });
 });*/
-
