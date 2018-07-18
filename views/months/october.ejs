@@ -1,31 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Curriculum</title>
-		<link rel="stylesheet" type="text/css" href="../../css/12column_grid.css"/>
-		<link rel="stylesheet" type="text/css" href="../../css/main.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	</head>
-
-	<body class="container-12">
+<% include ../partials/monthsHeader %>
         
-		<header id="banner">
-			<!--Banner Area-->
-			<img src="../../images/reslife_banner.png">
-		</header>
-        
-		<div id="navigation">
-            
-			<!--Navigation Area-->
-			<ul><b>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../ra_responsibilities.html">RA Responsibilities</a></li>
-                <li><a href="../../month_by_month.html">Month by Month</a></li>
-                <li><a href="../../proposals_evals.html">Proposals & Evals</a></li>
-                <li><a href="../../helpful_sites.html">Helpful Sites</a></li>
-            </b></ul>
-            
-        </div>
+    <% include ../partials/navigation %>
         
 		<main class="container-12 grid-12 push-2 shift">
             
@@ -76,7 +51,7 @@
             <button class="container-12 grid-11 accordion">Conversation Starters</button>
 
             <div class="container-12 grid-11 panel convoStarter">
-                <img src="../../images/october_ConvoStarter.PNG">
+                <img src="images/october_ConvoStarter.PNG">
             </div>
 
             <button class="container-12 grid-11 accordion">Resources</button>
@@ -123,11 +98,5 @@
 			</div>-->
             
 		</main>
-		<footer>
-
-		</footer>
         
-        <script type="text/javascript" src="../../js/script.js"></script>
-        
-	</body>
-</html>
+<% include ../partials/monthsFooter %>
