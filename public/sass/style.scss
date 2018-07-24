@@ -1,0 +1,300 @@
+$ff: 'Raleway', sans-serif;
+$primary: #620000;
+$secondary: #ffd20f;
+$tertiary: white;
+
+body {
+    background: $tertiary;
+    font-family: $ff;
+}
+
+main {
+    background-color: $tertiary;
+    padding: 15px 15px 0px 15px;
+}
+
+table {
+    margin-top: 20px;
+    
+    tbody{
+    
+        tr{
+            
+            th{
+ 
+            }
+
+            th[colspan]{
+                text-align: center;
+            }
+            
+            td{
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 5px;
+                vertical-align: top;
+                text-align: left;
+            } 
+
+            td[rowspan]{
+                vertical-align: top;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.monthResources {
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        margin-left: -15px;
+        
+        li{
+            float: left;
+            padding-top: 15px;
+            margin-right: 31.2px;
+            width: 130px;
+            text-align: center;
+            
+            a{
+                display: block;
+                background-color: $secondary;
+                color: $primary;
+                text-decoration: none;
+                padding: 10px 10px;
+                padding-top: 10px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.sideNav{
+    background-color: $primary;
+    clear: left;
+    
+    ul{
+        list-style-type: none;
+        
+        li {
+            margin-bottom: 10px;
+            
+            a{
+                text-decoration: none;
+                color: $tertiary;
+            }
+            
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.shift{
+    margin-left: 0px;
+}
+
+.accordion{
+    background-color: $tertiary;
+    color: $primary;
+    cursor: pointer;
+    border: none;
+    padding: 18px;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom-style: solid;
+    border-color: $primary;
+}
+
+.accordion:after{
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: $primary;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after{
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.active, .accordion:hover{
+    border-color: $secondary;
+}
+
+.panel{
+    display: none;
+    background-color: $tertiary;
+    overflow: hidden;
+}
+
+.convoStarter{
+    padding: 10px 0px 0px 5px;
+}
+
+/*Style the tab buttons*/
+.tablink{
+    background-color: $tertiary;
+    color: $primary;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: -2px;
+    padding: 25px;
+    margin-top: 15px;
+    border: solid;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    background-color: $secondary;
+    color: $primary;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    padding: 50px;
+    margin-top: 35px;
+}
+
+.resourcesHeader {
+    text-align: center;
+}
+
+.table_resources {
+    text-align: left;
+}
+
+#banner {
+	background-color: $primary;
+    color: $tertiary;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+#navigation {
+	background-color: $secondary;
+    
+    ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        padding-left: 175px;
+        overflow: hidden;
+        margin-left: 170px;
+        
+        li{
+            float: left;
+            padding: 15px 20px;
+            
+            a{
+                color: $primary;
+                text-align: center;
+                text-decoration: none;
+            }
+            
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+#programSection{
+    ul{
+        color: $secondary;
+        margin-left: -15px;
+    }
+}
+
+#blankSection {
+    height: 80px;
+}
+
+#header_main {
+	background-color: $primary;
+    color: $tertiary;
+	margin-left: -15px;
+    text-align: center;
+}
+
+#content_main {
+    padding-left: 15px;
+}
+
+#programsPE {
+    margin-left: 186px;
+    width: 600px;
+    
+    td{
+        text-align: center;
+        
+        a{
+            text-decoration: none;
+            color: $primary;
+        }
+        
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+#buttons_content_main{
+    ul{
+        list-style-type: none;
+        text-align: center;
+        
+        li{
+            
+            a{
+                display: block;
+                color: $tertiary;
+                padding: 10px 0px;
+                text-decoration: none;
+                background-color: $primary;
+                width: 270px;
+                margin-left: 153px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+/*#image_main{
+	background: violet;
+	margin: 0px;
+}*/
+
+#closingResources{
+    ul{
+        margin-left: 150px;
+    }
+}
+
+#multiResource{
+    ul{
+        li{
+           margin-right: 9px;
+            width: 120px; 
+        }
+    }
+}
+
+#resource_table {
+    width: auto;
+}
+
+#campusCommunityResources{
+    td{
+        width: 450px;
+    }
+}

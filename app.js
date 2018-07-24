@@ -83,20 +83,3 @@ app.get('/months/may', function(req, res){
 app.listen(port, function(){
     console.log('Server started on port ' + port + '...');     
 });
-
-/*fs.readFile('../views/index.ejs', (err, ejs) => {
-    if(err){
-        throw err;
-    }
-    
-    const server = http.createServer((req, res) => {
-        res.statusCode = 200;
-        res.setHeader('Content-type', 'text/html', 'text/css');
-        res.write(ejs);
-        res.end();
-    });
-
-    server.listen(port, hostname, () => {
-        console.log('Server started on port ' + port);
-    });
-});*/
